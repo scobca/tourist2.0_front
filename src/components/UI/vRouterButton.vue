@@ -3,7 +3,7 @@
         <div class="buttons_container">
             <ul class="buttons_list">
                 <li class="button">
-                    <router-link :to="this.route"> {{this.placeholder}} </router-link>
+                    <router-link :to="this.route" class="router-button"> {{this.placeholder}} </router-link>
                 </li>
             </ul>
         </div>
@@ -36,7 +36,7 @@ export default {
     padding: 0 .5rem;
 
     height: 3.5rem;
-    background: var(--text-color-dark);
+    background: var(--border-color-bg);
 //border: 3px black solid;
 }
 
@@ -46,7 +46,7 @@ export default {
     justify-content: left;
     align-items: center;
     max-width: 40rem;
-//border: 2px solid red;
+    //border: 2px solid red;
 
 }
 
@@ -56,7 +56,7 @@ export default {
     gap: 3rem;
     list-style: none;
     cursor: pointer;
-//border: 2px solid green;
+    //border: 2px solid green;
     min-height: 2rem;
 }
 
@@ -68,9 +68,21 @@ export default {
     width: 9rem;
     height: 2rem;
 
-    border: 2px solid purple;
+    background: var(--border-color-bg);
+}
+.router-button {
+    padding: .3rem .5rem;
+    width: 9rem;
+    border: 2px solid var(--border-color-light);
     border-radius: .5rem;
+    transition: .5s;
+    text-decoration: none;
+    color: var(--text-color-light);
+}
 
-    background: lightblue;
+
+.router-button:hover {
+    border: 2px solid blue;
+    transition: .5s;
 }
 </style>
