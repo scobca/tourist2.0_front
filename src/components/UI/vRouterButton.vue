@@ -1,0 +1,76 @@
+<template>
+    <div class="container">
+        <div class="buttons_container">
+            <ul class="buttons_list">
+                <li class="button">
+                    <router-link :to="this.route"> {{this.placeholder}} </router-link>
+                </li>
+            </ul>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'vRouterButton',
+    components: {},
+    props: {
+        placeholder: {
+            type: String,
+            default: 'Button'
+        },
+        route: {
+            type: String,
+            default: ''
+        }
+    }
+}
+</script>
+
+<style>
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 .5rem;
+
+    height: 3.5rem;
+    background: var(--text-color-dark);
+//border: 3px black solid;
+}
+
+.buttons_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    max-width: 40rem;
+//border: 2px solid red;
+
+}
+
+.buttons_list {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3rem;
+    list-style: none;
+    cursor: pointer;
+//border: 2px solid green;
+    min-height: 2rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 9rem;
+    height: 2rem;
+
+    border: 2px solid purple;
+    border-radius: .5rem;
+
+    background: lightblue;
+}
+</style>

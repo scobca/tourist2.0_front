@@ -4,23 +4,26 @@
             <h1 class="logo">Tourist.ru</h1>
         </div>
         <div class="buttons_container">
-            <ul class="buttons_list">
-                <li class="button" v-if="this.$route.name !== 'about'">
-                    <router-link to="about">Об авторах</router-link>
-                </li>
-                <li class="button" v-if="this.$route.name !== 'landing'">
-                    <router-link to="/">Назад</router-link>
-                </li>
-
-            </ul>
+            <v-router-button
+                :placeholder="'Об авторах'"
+                :route="'about'"
+                v-if="this.$route.name !== 'about'"
+            />
+            <v-router-button
+                :placeholder="'Назад'"
+                :route="'/'"
+                v-if="this.$route.name !== 'landing'"
+            />
         </div>
     </div>
 </template>
 
 <script>
+import VRouterButton from "@/components/UI/vRouterButton.vue";
+
 export default {
     name: 'vHeader',
-    components: {}
+    components: {VRouterButton}
 }
 </script>
 
@@ -45,30 +48,6 @@ export default {
     max-width: 40rem;
     //border: 2px solid red;
 
-}
-
-.buttons_list {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 3rem;
-    list-style: none;
-    cursor: pointer;
-    //border: 2px solid green;
-    min-height: 2rem;
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 9rem;
-    height: 2rem;
-
-    border: 2px solid purple;
-    border-radius: .5rem;
-
-    background: lightblue;
 }
 
 .logo {
