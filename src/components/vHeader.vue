@@ -2,7 +2,9 @@
     <div class="v-header-container">
         <div class="container">
             <div class="logo_container">
-                <h1 class="logo">Tourist.ru</h1>
+                <h1 class>
+                    <img src="@/assets/svg/logo_ru.svg" alt="tourist_logo" class="logo">
+                </h1>
             </div>
             <div class="buttons_container">
                 <v-router-button
@@ -57,11 +59,7 @@ export default {
 }
 
 .logo {
-    font-family: Allison, sans-serif;
-    font-size: 4rem;
-    font-weight: normal;
-    letter-spacing: 5px;
-    margin: -.1rem 0 0 2rem;
-    color: var(--text-color-light);
+    margin: 0.5rem 0 0 ;
+    height: 4rem;
 }
 </style>
