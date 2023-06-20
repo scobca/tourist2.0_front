@@ -33,7 +33,11 @@ export default {
 
 <style>
 .v-header-container {
-    //height: 5rem;
+    box-shadow: 0 0 5px #4f4f4f;
+    background: rgba(7, 18, 25, 0.75);;
+    border-bottom: 1px solid inherit;
+    border-radius: 0 0 1rem 1rem;
+    width: 95vw;
 }
 
 .container {
@@ -45,7 +49,6 @@ export default {
     margin: 0;
     padding: 0 1rem;
     height: 5rem;
-    //border: 3px black solid;
 }
 
 .logo_container, .buttons_container {
@@ -54,12 +57,10 @@ export default {
     justify-content: left;
     align-items: center;
     max-width: 40rem;
-    //border: 2px solid red;
-
 }
 
 .logo {
-    margin: 0.5rem 0 0 ;
-    height: 4rem;
+    margin: 0.35rem 0 0 0;
+    height: 3.5rem;
 }
 </style>

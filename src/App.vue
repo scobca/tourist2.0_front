@@ -4,9 +4,9 @@
             <v-header/>
             <router-view/>
         </div>
-        <div class="right_slide">
-            <p></p>
-        </div>
+<!--        <div class="right_slide">-->
+<!--            <p></p>-->
+<!--        </div>-->
     </div>
 </template>
 
@@ -36,12 +36,18 @@ export default {
 
 .main_container {
     display: grid;
-    grid-template-columns: 14fr 1fr;
+    //grid-template-columns: 14fr 1fr;
+    grid-template-columns: 14fr;
+}
+
+.info_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .right_slide {
     height: 100vh;
-    //background: linear-gradient(0deg, #0e42ce 13.57%, #3987a4 98.35%);
     background: radial-gradient(circle at right, #0e42ce 13.57%, #3987a4 98.35%);
 }
 </style>

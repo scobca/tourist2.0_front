@@ -3,12 +3,12 @@
         <div class="container main_land_container">
             <div class="landing_info">
                 <div class="block">
-                    <h1 class="question">Что такое Турист.ру?</h1>
-                    <ul>
-                        <li class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dicta modi, nihil placeat tempora ut.</li>
-                        <br><li class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dicta modi, nihil placeat tempora ut.</li>
-                        <br><li class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dicta modi, nihil placeat tempora ut.</li>
-                    </ul>
+                    <h1 class="question">Турист.ру - <br><span>больше, чем карта</span></h1>
+<!--                    <ul>-->
+<!--                        <li class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dicta modi, nihil placeat tempora ut.</li>-->
+<!--                        <br><li class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dicta modi, nihil placeat tempora ut.</li>-->
+<!--                        <br><li class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dicta modi, nihil placeat tempora ut.</li>-->
+<!--                    </ul>-->
                 </div>
             </div>
             <div class="landing_registration">
@@ -51,11 +51,12 @@ export default {
 <style>
     .landing-container {
         border: 3px solid black;
+        margin-top: 3rem;
     }
 
     .main_land_container {
         display: grid;
-        grid-template-columns: 3fr 4fr;
+        grid-template-columns: 2fr 4fr;
         gap: 1rem;
         min-height: 35rem;
     }
@@ -79,6 +80,12 @@ export default {
     .question {
         text-align: left;
         margin: 0 0 1rem 0;
+        border: 3px solid red;
+        font-size: 3.5rem;
+    }
+
+    .question > span {
+        font-size: 2.5rem;
     }
 
     .answer {
