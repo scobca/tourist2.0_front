@@ -119,6 +119,14 @@ export default {
     list-style: none;
 
     background: rgba(13, 36, 49, 0.75);
+
+    scale: 100%;
+    transition: .5s;
+}
+
+.answer:hover {
+    scale: 105%;
+    transition: .5s;
 }
 
 .answers_list {
@@ -140,5 +148,12 @@ export default {
 
 .reg_button {
     width: 17rem;
+    scale: 100%;
+    transition: .5s;
+}
+
+.reg_button:hover {
+    scale: 105%;
+    transition: .5s;
 }
 </style>

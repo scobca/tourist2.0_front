@@ -41,6 +41,10 @@ export default {
     color: var(--text-button-color);
 }
 
+.button_container:hover {
+    cursor: pointer;
+}
+
 .v-router_button {
     background: linear-gradient(150deg, #3767e3 13.57%, #3987a4 98.35%);
     color: var(--text-button-color);
