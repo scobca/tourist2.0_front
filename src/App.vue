@@ -1,7 +1,7 @@
 <template>
     <div class="main_container">
         <div class="info_container">
-            <v-header/>
+            <v-header v-if="this.$route.name !== 'landing'"/>
             <router-view/>
         </div>
 <!--        <div class="right_slide">-->
@@ -25,7 +25,7 @@ export default {
 :root {
     /*text*/
     --text-color-light: hsl(210, 29%, 24%);
-    --text-color-dark: hsl(208, 50%, 54%);
+    --text-color-dark: hsl(180, 33%, 96%);
     --text-color-dark-2: hsl(180, 36%, 96%);
     --text-button-color: hsl(180, 36%, 96%);
     --text-router-button-dark: hsl(0, 0%, 66%);
