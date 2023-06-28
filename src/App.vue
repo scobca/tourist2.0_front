@@ -27,11 +27,13 @@ export default {
     --text-color-light: hsl(210, 29%, 24%);
     --text-color-dark: hsl(208, 50%, 54%);
     --text-button-color: hsl(180, 36%, 96%);
+    --text-router-button-dark: hsl(0, 0%, 66%);
 
     /*border*/
     --border-color-light: hsl(210, 29%, 24%);
     --border-color-dark: hsl(208, 50%, 54%);
-    --border-color-bg: #f6f2f2 //buttons
+    --border-color-bg: hsl(0, 18%, 96%);
+    --border-color-bg-2: hsl(0, 0%, 66%);
 }
 
 .main_container {

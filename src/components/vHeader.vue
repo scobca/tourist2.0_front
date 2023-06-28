@@ -3,7 +3,7 @@
         <div class="container">
             <div class="logo_container">
                 <h1 class>
-                    <img src="@/assets/svg/logo_ru.svg" alt="tourist_logo" class="logo">
+                    <img src="@/assets/svg/logo_ru_white.svg" alt="tourist_logo" class="logo">
                 </h1>
             </div>
             <div class="buttons_container">
@@ -34,7 +34,7 @@ export default {
 <style>
 .v-header-container {
     box-shadow: 0 0 5px #4f4f4f;
-    background: rgba(7, 18, 25, 0.75);;
+    background: rgba(7, 18, 25, 0.75);
     border-bottom: 1px solid inherit;
     border-radius: 0 0 1rem 1rem;
     width: 95vw;

@@ -67,19 +67,24 @@ export default {
 
     width: 9rem;
     height: 2rem;
-
-    background: var(--border-color-bg);
 }
 .router-button {
     padding: .3rem .5rem;
     width: 9rem;
-    border: 2px solid var(--border-color-light);
+    border: 2px solid var(--border-color-bg-2);
     border-radius: .5rem;
     transition: .5s;
     text-decoration: none;
-    color: var(--text-color-light);
+    color: var(--text-router-button-dark);
 }
 
+.router-button:hover {
+    padding: .3rem .5rem;
+    transition: .5s;
+    border-radius: .5rem;
+    border: 2px solid white !important;
+    color: white;
+}
 
 .router-button:hover {
     border: 2px solid blue;
