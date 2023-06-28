@@ -26,6 +26,7 @@ export default {
     /*text*/
     --text-color-light: hsl(210, 29%, 24%);
     --text-color-dark: hsl(208, 50%, 54%);
+    --text-color-dark-2: hsl(180, 36%, 96%);
     --text-button-color: hsl(180, 36%, 96%);
     --text-router-button-dark: hsl(0, 0%, 66%);
 

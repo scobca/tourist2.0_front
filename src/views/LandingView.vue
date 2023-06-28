@@ -12,7 +12,9 @@
                 </div>
             </div>
             <div class="landing_registration">
-                <div class="logo reg_logo">Tourist.ru logo</div>
+                <div class="reg_logo">
+                    <double-balloon-logo/>
+                </div>
                 <div class="reg_block">
                     <v-button :placeholder="'Регистрация'"
                               class="reg_button"
@@ -30,10 +32,11 @@
 
 <script>
 import VButton from "@/components/UI/vButton.vue";
+import DoubleBalloonLogo from "@/components/UI/vDBalloonLogo.vue";
 
 export default {
     name: 'HomeView',
-    components: {VButton},
+    components: {DoubleBalloonLogo, VButton},
     data() {
 
     },
@@ -56,13 +59,13 @@ export default {
 
     .main_land_container {
         display: grid;
-        grid-template-columns: 2fr 4fr;
+        grid-template-columns: 3fr 5fr;
         gap: 1rem;
         min-height: 35rem;
     }
 
     .landing_info, .landing_registration {
-        border: 3px solid red;
+        border: 3px solid green;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -82,6 +85,7 @@ export default {
         margin: 0 0 1rem 0;
         border: 3px solid red;
         font-size: 3.5rem;
+        color: var(--text-button-color);
     }
 
     .question > span {
@@ -99,11 +103,11 @@ export default {
         display: flex;
         flex-direction: column;
         gap: .5rem;
-        margin-top: 2rem;
     }
 
     .reg_logo {
-        margin: 0;
+        margin: 1rem 0 1rem 0;
+        height: 20rem;
     }
 
     .reg_button {
