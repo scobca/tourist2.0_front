@@ -1,6 +1,6 @@
 <template>
     <div class="button_container">
-        <p class="button_block" @click="$emit('click')"> {{this.placeholder}} </p>
+        <p class="button_block"> {{this.placeholder}} </p>
     </div>
 </template>
 

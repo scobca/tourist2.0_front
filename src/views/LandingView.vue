@@ -14,7 +14,7 @@
                             без машины.
                         </li>
                         <li class="answer">
-                                Собрано командой web-разработчиков из Санкт-Петербурга
+                            Собрано командой web-разработчиков из Санкт-Петербурга
                         </li>
                     </ul>
                 </div>
@@ -31,6 +31,10 @@
                     <v-button :placeholder="'Вход'"
                               class="reg_button"
                               @click="login"
+                    />
+                    <v-button :placeholder="'Информация о нас'"
+                              class="reg_button"
+                              @click="aboutUs"
                     />
                 </div>
             </div>
@@ -54,6 +58,9 @@ export default {
         },
         login() {
             console.log('login start')
+        },
+        aboutUs() {
+            console.log('about us start')
         }
     }
 }
@@ -72,15 +79,10 @@ export default {
 }
 
 .landing_info, .landing_registration {
-//border: 3px solid green; display: flex;
-    flex-direction: column;
+//border: 3px solid green; display: flex; flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     padding: 1rem;
-}
-
-.landing_registration {
-    margin-top: 1rem;
 }
 
 .block {
@@ -92,9 +94,8 @@ export default {
 
 .question {
     text-align: left;
-    margin: 0 0 3rem 0;
-//border: 3px solid red; font-size: 3.5rem;
-    color: var(--text-button-color);
+    margin: 0 0 4rem 0;
+//border: 3px solid red; font-size: 3.5rem; color: var(--text-button-color);
     width: 30rem;
 }
 
@@ -119,7 +120,7 @@ export default {
 .answers_list {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 .reg_block {
@@ -129,7 +130,7 @@ export default {
 }
 
 .reg_logo {
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 2.5rem 0;
     height: 20rem;
 }
 
