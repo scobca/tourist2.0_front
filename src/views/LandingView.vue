@@ -27,14 +27,18 @@
                     <v-button :placeholder="'Регистрация'"
                               class="reg_button"
                               @click="registration"
+                              :push="true"
+                              :route="'registration'"
                     />
                     <v-button :placeholder="'Вход'"
                               class="reg_button"
                               @click="login"
+                              :push="true"
                     />
                     <v-button :placeholder="'Информация о нас'"
                               class="reg_button"
                               @click="aboutUs"
+                              :push="true"
                     />
                 </div>
             </div>

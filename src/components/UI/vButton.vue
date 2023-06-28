@@ -1,6 +1,7 @@
 <template>
     <div class="button_container">
-        <p class="button_block"> {{this.placeholder}} </p>
+        <p class="button_block" v-if="!this.push"> {{this.placeholder}} </p>
+        <router-link :to="this.route" class="v-router_button" v-if="this.push"> {{this.placeholder}} </router-link>
     </div>
 </template>
 
@@ -11,6 +12,14 @@ export default {
         placeholder: {
             type: String,
             default: 'button'
+        },
+        push: {
+            type: Boolean,
+            default: false
+        },
+        route: {
+            type: String,
+            default: '/'
         }
     }
 }
@@ -30,5 +39,11 @@ export default {
     border-radius: .75rem;
     background: linear-gradient(150deg, #3767e3 13.57%, #3987a4 98.35%);
     color: var(--text-button-color);
+}
+
+.v-router_button {
+    background: linear-gradient(150deg, #3767e3 13.57%, #3987a4 98.35%);
+    color: var(--text-button-color);
+    text-decoration: none;
 }
 </style>
