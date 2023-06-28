@@ -51,7 +51,7 @@ import VButton from "@/components/UI/vButton.vue";
 import DoubleBalloonLogo from "@/components/UI/vDBalloonLogo.vue";
 
 export default {
-    name: 'HomeView',
+    name: 'LandingView',
     components: {DoubleBalloonLogo, VButton},
     data() {
 
@@ -148,6 +148,7 @@ export default {
 
 .reg_button {
     width: 17rem;
+    height: 3rem;
     scale: 100%;
     transition: .5s;
 }
